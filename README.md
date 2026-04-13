@@ -52,3 +52,52 @@ The project uses the **Olist E-commerce Dataset** containing 9 CSV files:
 
 LinkedIn: [linkedin.com/in/deepanraj-a](https://www.linkedin.com/in/deepanraj-a)
 GitHub: [github.com/deeepanbe](https://github.com/deeepanbe)
+
+
+## SQL Analysis
+
+The `sql/` folder contains comprehensive analytical queries:
+
+- **33+ SQL queries** covering sales, customer, product, delivery, and review metrics
+- **final_dashboard view** - A consolidated reporting view for Power BI consumption
+- Queries use Snowflake SQL syntax targeting `OLIST_E_COMMERCE.PUBLIC` schema
+- Key analysis areas:
+  - Revenue and order trends
+  - Customer segmentation and lifetime value
+  - Product category performance
+  - Delivery performance and logistics
+  - Customer satisfaction and reviews
+  - Geographic market analysis
+  - Payment method distribution
+
+## Data Modeling
+
+- **Star Schema** design with `order_items` as the central fact table
+- Dimension tables: `DIM_CUSTOMERS`, `DIM_PRODUCTS`, `DIM_SELLERS`, `DIM_GEOLOCATION`, `DIM_ORDERS`
+- Refer to `documentation/02_star_schema.md` for detailed schema documentation
+- Refer to `documentation/01_views_overview.md` for view definitions
+
+## Power BI Dashboard
+
+The Power BI dashboard connects to Snowflake and includes:
+- Executive KPI summary cards
+- Revenue trends and forecasting
+- Customer acquisition and retention metrics
+- Product performance analysis
+- Delivery performance tracking
+- Geographic sales distribution
+- Review sentiment analysis
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Author
+
+**Deepanraj A** | Data Analyst
+- LinkedIn: [linkedin.com/in/deepanraj-a](https://www.linkedin.com/in/deepanraj-a)
+- GitHub: [github.com/deeepanbe](https://github.com/deeepanbe)
