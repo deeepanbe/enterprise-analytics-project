@@ -7,13 +7,9 @@ A comprehensive end-to-end data analytics project analyzing the Olist E-commerce
 
 ```
 enterprise-analytics-project/
-|-- automation/          # Pipeline automation scripts
 |-- documentation/       # Data dictionary and architecture docs
-|-- etl/                 # ETL pipeline code
-|-- powerbi/             # Power BI dashboard files
-|-- python/              # Python scripts for data processing
-|-- sql/                 # SQL queries and scripts
-|-- .env                 # Environment variables
+|-- sql/                 # 33+ SQL analytical queries (star schema, Snowflake)
+|-- .env.example         # Environment variable template (Azure Blob Storage)
 |-- requirements.txt     # Python dependencies
 ```
 
@@ -21,9 +17,7 @@ enterprise-analytics-project/
 
 - **Snowflake** - Cloud data warehouse for data modeling and SQL analysis
 - **SQL** - 33+ analytical queries across sales, customer, delivery, and review metrics
-- **Python** - ETL pipelines and data processing
-- **Azure Blob Storage** - Cloud storage for raw dataset files
-- **Power BI** - Interactive dashboards for business insights
+- **Azure Blob Storage** - Cloud storage for raw dataset files (config template provided; actual pipeline not included in this repo)
 
 ## Dataset
 
@@ -33,24 +27,22 @@ The project uses the **Olist E-commerce Dataset** containing 9 CSV files:
 
 ## Key Features
 
-- Star Schema data modeling (Dim/Fact tables)
-- 33+ SQL queries for business metrics
-- Feature engineering and data optimization
-- Power BI dashboard-ready views
-- Automated daily pipeline scripts
+- Star Schema data modeling (Dim/Fact tables) — see `documentation/`
+- 33+ SQL queries for business metrics (sales, customer, delivery, review analysis)
+- Feature engineering and data optimization in SQL
 
 ## Installation
 
 1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Configure `.env` with your Azure Blob Storage connection string
+2. Copy `.env.example` to `.env` and fill in your own Azure Blob Storage connection string (if using Blob Storage for the raw CSVs)
+3. Run the queries in `sql/analysis.sql` against a Snowflake warehouse loaded with the Olist dataset
 4. Follow the setup guides in the documentation folder
 
 ## Author
 
 **Deepanraj A** - Data Analyst | SQL | Power BI | Python
 
-LinkedIn: [linkedin.com/in/deepanraj-a](https://www.linkedin.com/in/deepanraj-a)
+Portfolio: [deeepanbe.github.io](https://deeepanbe.github.io)
 GitHub: [github.com/deeepanbe](https://github.com/deeepanbe)
 
 
